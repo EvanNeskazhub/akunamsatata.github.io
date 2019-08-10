@@ -1,0 +1,233 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-family: Montserrat
+
+a
+	color: #333
+	&:visited
+		color: #000
+// ===================
+
+// *1* header
+header
+ background-color: #F9F6F1
+// navbar
+.navbar-brand
+	font-family: Montserrat
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	letter-spacing: 0.05em
+	text-transform: uppercase
+.cart-block
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+.nav-item
+	color: #000!important
+	margin-top: -1vh
+	font-family: Montserrat
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+.navbar
+	padding-top: 2vh
+.navbar-light
+	background-color: #F9F6F1
+	.navbar-nav
+		.nav-link
+			color: #000
+			font-weight: 500
+a:hover
+	text-decoration: none!important
+.cart
+	margin-left: 5vh
+	position: relative
+
+	.arrow
+		margin-top: 1vh
+	.num
+		position: absolute
+		margin-left: -25px
+		margin-top: 8px
+		color: #fff
+		font-weight: 900
+	.bucket
+// caousel
+.bd-example
+	padding-top: 15vh
+	padding-bottom: 20vh
+.carousel-inner
+	img
+		max-width: 70vh
+		margin-right: 12vh
+		margin-left: auto
+	.carousel-caption
+		text-align: left
+		p
+			color: #000
+			font-style: normal
+			font-weight: normal
+			font-size: 24px
+
+			letter-spacing: 0.02em
+		h5
+			color: #000
+			font-style: normal
+			font-weight: bold
+			font-size: 46px
+			letter-spacing: 0.04em
+			margin-bottom: 30px
+	.btn
+		padding: 15px 30px
+		border-radius: 0
+		font-size: 14px
+		line-height: 20px
+		background: #D7B399
+		color: #fff
+.carousel-indicators
+	margin-bottom: -7vh
+	li
+		background-color: #000
+		width: 40px
+		height: 5px
+	.active
+		background-color: #D7B399
+
+// header *1*
+
+// ===================
+
+// *2* main
+
+.container-fluid_dark
+	height: 25vh
+	width: 100%
+	background: #212121
+	text-align: center
+	h2
+		padding-top: 9vh
+		font-weight: 700
+		color: #fff
+		font-size: 30px
+		span
+			font-weight: 300
+	p
+		opacity: .7
+		color: #fff
+		font-weight: 100
+
+// collection
+.section-collection
+	.collection
+		background-color: #F9F6F1
+		height: 25vh
+		border: 1px
+		transition: all .3s
+		&:hover
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.2)
+			z-index: 5
+		&-item
+			background-color: #F9F6F1
+			height: 30vh
+			&:hover
+				box-shadow: 0 0 25px rgba(0, 0, 0, 0.2)
+				z-index: 5
+			h4
+				font-size: 21px
+				margin-bottom: 20px
+				font-weight: 300
+				position: absolute
+				bottom: 0
+			img
+				width: 80%
+				right: 50%
+				left: 50%
+				bottom: 0
+		h3
+			margin-top: 4vh
+		img
+			max-width: 30vh
+			position: absolute
+			bottom: 0
+			right: 0
+			z-index: 0
+		.btn
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 30px
+			border-radius: 0
+			background-color: #D7B399
+			width: 80px
+			max-height: 30px
+.section-newmodels
+	margin-top: 10vh
+	text-align: center
+	margin-bottom: 12vh
+	h2
+		margin-bottom: 8vh
+		font-weight: 700
+	s
+		font-size: 12px
+	.item
+		padding-top: 3vh
+		margin-bottom: 1vh
+		&:hover
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+	.btn
+		background-color: #D7B399
+		color: #fff!important
+		border-radius: 0
+		padding: 8px
+		margin-top: 4vh
+.gift
+	&-form
+		display: flex
+		justify-content: center
+		align-items: center
+		h2
+			margin-bottom: 60px
+		input
+			background-color: #F9F6F1
+			padding: 5px
+			margin-left: 15px
+			border: none
+		.btn
+			background-color: #D7B399
+			color: #fff
+			margin-left: 10px
+			font-size: 14px
+
+			border-radius: 0
+			padding: 5.9px
+
+// main *2*
+
+// ===================
+
+// *3* footer
+
+footer
+
+	background-color: #212529
+	color: #fff
+	a
+		color: rgba(255, 255, 255, 0.7)!important
+
+// footer *3*
+
+// ===================
+
+@import _media.sass
